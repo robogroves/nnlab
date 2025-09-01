@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "num_samples": 3569,
+    "num_classes": 5,
+    "accuracy": 0.15214345755113476
+  },
+  "classes": [
+    "Delta",
+    "Flat_wing",
+    "Leading_edge",
+    "Propeller",
+    "Swept_back"
+  ],
+  "per_class_counts": {
+    "Delta": 192,
+    "Flat_wing": 1222,
+    "Leading_edge": 179,
+    "Propeller": 799,
+    "Swept_back": 1177
+  },
+  "artifacts": {
+    "y_true": "/home/kali/nnlab/artifacts/opt_aircraft_y_true.npy",
+    "y_pred": "/home/kali/nnlab/artifacts/opt_aircraft_y_pred.npy",
+    "confusion": "/home/kali/nnlab/artifacts/opt_aircraft_confusion.npy",
+    "confusion_png": "/home/kali/nnlab/figures/opt_aircraft_confusion.png"
+  },
+  "config_snapshot": {
+    "manifest_path": "~/nnlab/data/manifests/aircraft_eval.csv",
+    "transforms": "imagenet_224",
+    "device": "cpu",
+    "batch_size": 64,
+    "num_workers": 0,
+    "out_prefix": "opt_aircraft"
+  }
+}

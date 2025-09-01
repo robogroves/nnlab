@@ -1,0 +1,6 @@
+manifest_path: ~/nnlab/data/manifests/aircraft_eval.csv
+transforms: imagenet_224          # Resize256→CenterCrop224→ToTensor→Normalize
+device: cpu
+batch_size: 64
+num_workers: 0
+out_prefix: opt_aircraft
